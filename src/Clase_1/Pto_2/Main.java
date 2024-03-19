@@ -28,7 +28,7 @@ public class Main {
         System.out.println("Edad del Pasajero: " + pasajero1.getEdad());
 
         // Crear instancia de Reserva y mostrar información
-        Reserva reserva1 = new Reserva(pasajero1, 15, vuelo1);
+        Reserva reserva1 = new Reserva("Juan Pablo","Fernandez",31,pasajero1, 15, vuelo1);
         System.out.println("Reserva realizada para el asiento: " + reserva1.getAsiento());
     }
 }

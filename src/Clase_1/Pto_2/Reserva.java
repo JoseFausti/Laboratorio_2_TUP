@@ -1,19 +1,20 @@
 package Clase_1.Pto_2;
 
 // Definición de la clase Reserva
-public class Reserva {
+public class Reserva extends Pasajero{
     private Persona pasajero;
     private int asiento;
     private Vuelo vuelo; // Relación de agregación
 
-    public Reserva(Persona pasajero, int asiento, Vuelo vuelo) {
+    //Contructor
+    public Reserva(String nombre, String apellido, int edad, Persona pasajero, int asiento, Vuelo vuelo) {
+        super(nombre, apellido, edad);
         this.pasajero = pasajero;
         this.asiento = asiento;
         this.vuelo = vuelo;
     }
 
     // Getters y setters
-
     public Persona getPasajero() {
         return pasajero;
     }
