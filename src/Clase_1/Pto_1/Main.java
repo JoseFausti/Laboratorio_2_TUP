@@ -1,19 +1,21 @@
+package Clase_1.Pto_1;
+
 public class Main {
     public static void main(String[] args) {
         // Crear instancias de las clases
 
-        // Instancias de Avion
+        // Instancias de Clase_1.Pto_1.Avion
         Avion avion1 = new Avion("Boeing 737", "Boeing", 200);
 
-        // Instancias de Piloto
+        // Instancias de Clase_1.Pto_1.Piloto
         Piloto piloto1 = new Piloto(1, 12345678, "John Doe", 1001, "Airline Inc.");
 
-        // Instancias de Flota
+        // Instancias de Clase_1.Pto_1.Flota
         Flota flota1 = new Flota("Airline Inc.");
         // Agregar avión a la flota
         flota1.agregarAvion(avion1);
 
-        // Instancias de Reserva y Vuelo
+        // Instancias de Clase_1.Pto_1.Reserva y Clase_1.Pto_1.Vuelo
         Reserva reserva1 = new Reserva(1, 98765432, "Jane Smith", "ABC123");
         // Agregar vuelo a la reserva
         reserva1.AgregarVuelo(new Vuelo(avion1,"Turkish Airlines" ,"2024-03-15"));

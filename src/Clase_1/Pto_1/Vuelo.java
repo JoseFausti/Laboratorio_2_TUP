@@ -1,7 +1,9 @@
+package Clase_1.Pto_1;
+
 public class Vuelo {
     private String empresa;
     private String fechaVuelo;
-    private Avion avion; // Relacion de Asociacion de la Clase Avion en la Clase Vuelo
+    private Avion avion; // Relacion de Asociacion de la Clase Clase_1.Pto_1.Avion en la Clase Clase_1.Pto_1.Vuelo
 
     public Vuelo(Avion avion1, String empresa, String fechaVuelo){
         this.avion = avion1;

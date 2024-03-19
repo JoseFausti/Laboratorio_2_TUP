@@ -1,3 +1,5 @@
+package Clase_1.Pto_1;
+
 public class Avion {
     private String modelo;
     private String fabricante;

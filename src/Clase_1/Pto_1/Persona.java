@@ -1,3 +1,5 @@
+package Clase_1.Pto_1;
+
 public abstract class Persona {
     // Atributos protegidos
     protected int id;

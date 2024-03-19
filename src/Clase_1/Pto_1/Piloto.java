@@ -1,3 +1,5 @@
+package Clase_1.Pto_1;
+
 public class Piloto extends Persona implements Volador{
     // Atributos privados
     private int idPiloto;

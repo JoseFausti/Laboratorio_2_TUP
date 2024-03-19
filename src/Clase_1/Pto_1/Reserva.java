@@ -1,9 +1,11 @@
+package Clase_1.Pto_1;
+
 import java.util.ArrayList;
 
 public class Reserva extends Persona {
     // Atributo privado
     private String reservaVuelo;
-    private ArrayList<Vuelo> vuelos; // Relacion de Agregacion de la Clase Vuelos en la Clase Reserva
+    private ArrayList<Vuelo> vuelos; // Relacion de Agregacion de la Clase Vuelos en la Clase Clase_1.Pto_1.Reserva
 
     // Constructor
     public Reserva(int id, int dni, String nombreCompleto, String reservaVuelo) {
@@ -35,7 +37,7 @@ public class Reserva extends Persona {
         System.out.println("ID: " + getId());
         System.out.println("DNI: " + getDni());
         System.out.println("Nombre: " + getNombreCompleto());
-        System.out.println("Reserva de vuelo: " + reservaVuelo);
+        System.out.println("Clase_1.Pto_1.Reserva de vuelo: " + reservaVuelo);
         for (Vuelo vuelo : vuelos) {
             vuelo.Informacion(); // Imprimir información de cada vuelo
         }
