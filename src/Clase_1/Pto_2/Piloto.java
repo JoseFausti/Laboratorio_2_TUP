@@ -9,18 +9,25 @@ public class Piloto extends Persona implements Volador {
         this.licencia = licencia;
     }
 
-    @Override
-    public void volar() {
-        System.out.println("El piloto " + nombre + " " + apellido + " está volando.");
-    }
 
     // Getters y setters
-
     public String getLicencia() {
         return licencia;
     }
 
     public void setLicencia(String licencia) {
         this.licencia = licencia;
+    }
+
+    //Metodos
+    @Override
+    public void volar() {
+        System.out.println("El piloto " + nombre + " " + apellido + " está volando.");
+    }
+
+    // Método para mostrar la información
+    public void informacion() {
+        super.informacion();
+        System.out.println("Licencia: " + licencia);
     }
 }

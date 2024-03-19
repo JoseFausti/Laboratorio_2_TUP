@@ -69,4 +69,15 @@ public class Vuelo {
     public void setAvion(Avion avion) {
         this.avion = avion;
     }
+
+    // Método para mostrar la información
+    public void informacion() {
+        System.out.println("Número de vuelo: " + numeroVuelo);
+        System.out.println("Origen: " + origen);
+        System.out.println("Destino: " + destino);
+        System.out.println("Fecha: " + fecha);
+        System.out.println("Capacidad: " + capacidad);
+        System.out.println("Información del Avión:");
+        avion.informacion();
+    }
 }

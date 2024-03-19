@@ -25,5 +25,11 @@ public abstract class Persona {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
+
+    // Método para mostrar la información
+    public void informacion() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Apellido: " + apellido);
+    }
 }
 

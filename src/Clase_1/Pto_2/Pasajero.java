@@ -17,4 +17,10 @@ public class Pasajero extends Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+    // Método para mostrar la información
+    public void informacion() {
+        super.informacion();
+        System.out.println("Edad: " + edad);
+    }
 }

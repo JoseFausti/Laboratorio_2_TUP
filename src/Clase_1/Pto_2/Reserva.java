@@ -38,4 +38,13 @@ public class Reserva extends Pasajero{
     public void setVuelo(Vuelo vuelo) {
         this.vuelo = vuelo;
     }
+
+    // Método para mostrar la información
+    public void informacion() {
+        System.out.println("Información del Pasajero:");
+        pasajero.informacion();
+        System.out.println("Número de asiento: " + asiento);
+        System.out.println("Información del Vuelo:");
+        vuelo.informacion();
+    }
 }

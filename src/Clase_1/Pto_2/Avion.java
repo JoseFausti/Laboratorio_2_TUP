@@ -27,4 +27,10 @@ public class Avion {
     public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
+
+    // Método para mostrar la información
+    public void informacion() {
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Fabricante: " + fabricante);
+    }
 }
