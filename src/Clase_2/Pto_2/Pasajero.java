@@ -1,4 +1,4 @@
-package Clase_1.Pto_2;
+package Clase_2.Pto_2;
 
 // Clase Pasajero que hereda de Persona
 public class Pasajero extends Persona {

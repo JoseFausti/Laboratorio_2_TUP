@@ -1,4 +1,4 @@
-package Clase_1.Pto_2;
+package Clase_2.Pto_2;
 
 // Definición de la clase Piloto que implementa la interfaz Volador
 public class Piloto extends Persona implements Volador {

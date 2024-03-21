@@ -1,4 +1,4 @@
-package Clase_1.Pto_1;
+package Clase_2.Pto_1;
 
 public class Vuelo {
     private String empresa;

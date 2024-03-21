@@ -1,4 +1,4 @@
-package Clase_2.Herencia;
+package Clase_3.Herencia;
 
 public class Main {
     public static void main(String[] args) {

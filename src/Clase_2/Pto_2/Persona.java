@@ -1,4 +1,4 @@
-package Clase_1.Pto_2;
+package Clase_2.Pto_2;
 public abstract class Persona {
     protected String nombre;
     protected String apellido;

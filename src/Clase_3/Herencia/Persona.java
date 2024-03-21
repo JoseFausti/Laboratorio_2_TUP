@@ -1,4 +1,4 @@
-package Clase_2.Herencia;
+package Clase_3.Herencia;
 
 import java.util.ArrayList;
 import java.util.List;
