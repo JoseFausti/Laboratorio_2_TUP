@@ -1,4 +1,4 @@
-package Clase_4.Clases;
+package Clase_4.Clases.Ejercicio_1;
 
 public class Lado {
     private Punto[]puntos = new Punto[2];
