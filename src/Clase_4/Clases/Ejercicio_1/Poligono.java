@@ -5,28 +5,15 @@ import java.util.List;
 
 public class Poligono extends Figura{
     //Atributos
-    private int numLados;
-    private List<Lado> lados;
+    List<Figura> figuras;
 
-    public Poligono(int numLados, List<Lado> lados) {
-        this.numLados = numLados;
-        this.lados = lados;
+    //Constructor
+    public Poligono() {
+        this.figuras = new ArrayList<>();
     }
 
     //Getter y Setter
-    public int getNumLados() {
-        return numLados;
-    }
-    public void setNumLados(int numLados) {
-        this.numLados = numLados;
-    }
 
-    public List<Lado> getLados() {
-        return lados;
-    }
-    public void setLados(List<Lado> lados) {
-        this.lados = lados;
-    }
 
     //Metodos
 
