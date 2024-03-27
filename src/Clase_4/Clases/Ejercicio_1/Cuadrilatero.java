@@ -1,4 +1,8 @@
 package Clase_4.Clases.Ejercicio_1;
 
-public class Cuadrilatero {
+public class Cuadrilatero extends Poligono{
+    //Constructor
+    public Cuadrilatero(Punto puntos) {
+        super(4, puntos);
+    }
 }

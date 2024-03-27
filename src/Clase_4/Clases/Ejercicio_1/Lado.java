@@ -1,13 +1,20 @@
 package Clase_4.Clases.Ejercicio_1;
 
-public class Lado {
-    private Punto[]puntos = new Punto[2];
+import java.util.ArrayList;
+import java.util.List;
 
-    //Constructor
-    public Lado(){
-        for (Punto punto : puntos) {
-            punto = new Punto(punto.getX(),punto.getY());
-        }
+public class Lado {
+    private int cantLados;
+
+    public Lado(int cantLados) {
+        this.cantLados = cantLados;
+    }
+    //Getter y Setter
+    public int getCantLados() {
+        return cantLados;
+    }
+    public void setCantLados(int cantLados) {
+        this.cantLados = cantLados;
     }
 
     //Metodos

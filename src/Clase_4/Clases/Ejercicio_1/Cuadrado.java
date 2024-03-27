@@ -1,4 +1,8 @@
 package Clase_4.Clases.Ejercicio_1;
 
-public class Cuadrado {
+public class Cuadrado extends Rectangulo{
+    //Constructor
+    public Cuadrado(Punto puntos) {
+        super(puntos);
+    }
 }
