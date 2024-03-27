@@ -32,8 +32,8 @@ public class Punto {
     }
 
     //Metodos
-    public void AgregarPuntos(Punto punto){
-        puntos.add(punto);
+    public void AgregarLado(Lado lado){
+        this.lados.add(lado);
     }
 
 }

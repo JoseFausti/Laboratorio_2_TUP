@@ -1,22 +1,32 @@
 package Clase_4.Clases.Ejercicio_1;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Lado {
-    private int cantLados;
+    //Atributos
+    private List<Poligono> poligonos; //Relacion de Composicion
+    private Punto[] puntos;
 
-    public Lado(int cantLados) {
-        this.cantLados = cantLados;
+
+    //Constructor
+    public Lado() {
+        this.puntos = new Punto[2];
+        for (int i = 0; i < puntos.length; i++) {
+            puntos[i] = CrearPunto(puntos[i]);
+        }
     }
+
     //Getter y Setter
-    public int getCantLados() {
-        return cantLados;
+    public List<Poligono> getPoligonos() {
+        return poligonos;
     }
-    public void setCantLados(int cantLados) {
-        this.cantLados = cantLados;
+    public void setPoligonos(List<Poligono> poligonos) {
+        this.poligonos = poligonos;
     }
 
     //Metodos
+    public Punto CrearPunto(@org.jetbrains.annotations.NotNull Punto punto){
+        return new Punto(punto.getX(), punto.getY());
+    }
 
 }

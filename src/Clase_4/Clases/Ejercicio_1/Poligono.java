@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Poligono extends Figura{
     //Atributos
-    List<Figura> figuras;
+    List<Figura> figuras; //Relacion de Agregacion
 
     //Constructor
     public Poligono() {
@@ -13,6 +13,12 @@ public class Poligono extends Figura{
     }
 
     //Getter y Setter
+    public List<Figura> getFiguras() {
+        return figuras;
+    }
+    public void setFiguras(List<Figura> figuras) {
+        this.figuras = figuras;
+    }
 
 
     //Metodos
