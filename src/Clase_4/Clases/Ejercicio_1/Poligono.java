@@ -5,19 +5,27 @@ import java.util.List;
 
 public class Poligono extends Figura{
     //Atributos
-    List<Figura> figuras; //Relacion de Agregacion
+    List<Lado> lados; //Relacion de Compocicion
+
 
     //Constructor
-    public Poligono() {
-        this.figuras = new ArrayList<>();
+    public Poligono(int cantidadLados){
+        this.lados = new ArrayList<>();
+        if (cantidadLados >= 3) {
+            for (int i = 0; i < cantidadLados; i++) {
+                this.lados.add(new Lado());
+            }
+        }else {
+            System.out.println("Debe ingresar mas de 3 lados.");
+        }
     }
 
     //Getter y Setter
-    public List<Figura> getFiguras() {
-        return figuras;
+    public List<Lado> getLados() {
+        return lados;
     }
-    public void setFiguras(List<Figura> figuras) {
-        this.figuras = figuras;
+    public void setLados(List<Lado> lados) {
+        this.lados = lados;
     }
 
 

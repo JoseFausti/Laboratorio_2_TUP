@@ -7,13 +7,11 @@ public class Punto {
     //Atributos
     private  float x;
     private float y;
-    private List<Lado> lados; //Relacion de Composicion
 
     //Constructor
     public Punto(float x, float y) {
         this.x = x;
         this.y = y;
-        this.lados = new ArrayList<>();
     }
 
     //Getter y Setter
@@ -32,8 +30,5 @@ public class Punto {
     }
 
     //Metodos
-    public void AgregarLado(Lado lado){
-        this.lados.add(lado);
-    }
 
 }

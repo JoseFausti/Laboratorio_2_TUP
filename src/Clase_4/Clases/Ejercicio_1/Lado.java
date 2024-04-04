@@ -4,8 +4,7 @@ import java.util.List;
 
 public class Lado {
     //Atributos
-    private List<Poligono> poligonos; //Relacion de Composicion
-    private Punto[] puntos;
+    private Punto[] puntos; // Relacion de Compocicion
 
 
     //Constructor
@@ -17,11 +16,14 @@ public class Lado {
     }
 
     //Getter y Setter
-    public List<Poligono> getPoligonos() {
-        return poligonos;
+    public Punto[] getPuntos() {
+        return puntos;
     }
-    public void setPoligonos(List<Poligono> poligonos) {
-        this.poligonos = poligonos;
+    public void setPuntos(Punto[] puntos) {
+        this.puntos = new Punto[2];
+        for (int i = 0; i < puntos.length; i++) {
+            puntos[i] = CrearPunto(puntos[i]);
+        }
     }
 
     //Metodos
