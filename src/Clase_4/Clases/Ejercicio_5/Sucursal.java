@@ -6,14 +6,23 @@ import java.util.List;
 public class Sucursal {
 
 	//Atributos
+	private String nombre;
 	private List<Plato>platos;
 
 	//Constructor
-	public Sucursal() {
+	public Sucursal(String nombre) {
+		this.nombre = nombre;
 		this.platos = new ArrayList<>();
 	}
 
 	//Getter y Setter
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
 	public List<Plato> getPlatos() {
 		return platos;
 	}
