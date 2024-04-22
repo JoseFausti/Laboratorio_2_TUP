@@ -21,6 +21,13 @@
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -55,7 +62,7 @@
       <updated>1713625516779</updated>
       <workItem from="1713625517083" duration="1043000" />
       <workItem from="1713798016256" duration="124000" />
-      <workItem from="1713799169925" duration="359000" />
+      <workItem from="1713799169925" duration="570000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <option name="closed" value="true" />
@@ -73,7 +80,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713625937683</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new">
+      <option name="closed" value="true" />
+      <created>1713799565954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713799565954</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
