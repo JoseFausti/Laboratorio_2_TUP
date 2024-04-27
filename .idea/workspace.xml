@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d16d2555-d183-49df-b3aa-a5c9fc7a1858" name="Changes" comment="new">
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Trabajo_Practico_Log4j/Ejercicio_1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Trabajo_Practico_Log4j/Ejercicio_2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Trabajo_Practico_Log4j/Ejercicio_3/Punto_a/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Trabajo_Practico_Log4j/Ejercicio_3/Punto_b/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +23,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="master" />
@@ -41,21 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Gradle&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JOSE/Facultad/UTN Tecnicatura en Programacion/2º Semestre/Laboratorio_2/Laboratorio_2_TUP/Ejercicios Intellij IDEA_Lab_2/src/Clase_6/EjercicioLog4Gradle2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/JOSE/Facultad/UTN Tecnicatura en Programacion/2º Semestre/Laboratorio_2/Laboratorio_2_TUP/Ejercicios Intellij IDEA_Lab_2/src/Clase_6/EjercicioLog4Gradle2/src/main/java/org/example/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Gradle",
+    "last_opened_file_path": "D:/JOSE/Facultad/UTN Tecnicatura en Programacion/2º Semestre/Laboratorio_2/Laboratorio_2_TUP/Ejercicios Intellij IDEA_Lab_2/src/Clase_6/EjercicioLog4Gradle2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "D:/JOSE/Facultad/UTN Tecnicatura en Programacion/2º Semestre/Laboratorio_2/Laboratorio_2_TUP/Ejercicios Intellij IDEA_Lab_2/src/Clase_6/EjercicioLog4Gradle2/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,6 +82,7 @@
       <workItem from="1713799169925" duration="570000" />
       <workItem from="1713800254535" duration="129000" />
       <workItem from="1713819005003" duration="599000" />
+      <workItem from="1714247236179" duration="3175000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <option name="closed" value="true" />

@@ -9,11 +9,11 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
         Main app = new Main();
-        if(logger.isErrorEnabled())
+        if(logger.isErrorEnabled()){
             logger.error("Esto es un error");
-        logger.info("Entering application");
-        logger.debug("Esto es un debug Loggin");
-        logger.log(app.VERBOSE, "A verbose message");
-
+            logger.info("Entering application");
+            logger.debug("Esto es un debug Loggin");
+            logger.log(app.VERBOSE, "A verbose message");
+        }
     }
 }

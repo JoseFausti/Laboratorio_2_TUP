@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="INFO">
     <Appenders>
-        <Console name="console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
-        </Console>
+        <!-- Definir appenders aquí -->
     </Appenders>
-
     <Loggers>
-        <Root level="debug">
-            <AppenderRef ref="console" />
+        <Root level="DEBUG">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="FILE"/>
         </Root>
+        <!-- Configuración para nuestro nuevo nivel de logging personalizado -->
+        <Logger name="com.example" level="miLogLevel" additivity="false">
+            <AppenderRef ref="CUSTOM_APPENDER"/>
+        </Logger>
     </Loggers>
 </Configuration>
