@@ -1,15 +1,16 @@
 package Clase_4.Clases.Ejercicio_7;
-public class Equipo extends Participante {
+public class Equipo{
 
 	//Atributos
+	private String nombre;
 	private String codigo;
 	private String entrenador;
 	private Esquiador esquiadores[];
 	private int numeroEsquiadores;
 
 	//Constructor
-	public Equipo(String dni, int edad, String fechaNacimiento, String nombre, String codigo, String entrenador, Esquiador[] esquiadores, int numeroEsquiadores) {
-		super(dni, edad, fechaNacimiento, nombre);
+	public Equipo(String nombre,String codigo, String entrenador, Esquiador[] esquiadores, int numeroEsquiadores) {
+		this.nombre = nombre;
 		this.codigo = codigo;
 		this.entrenador = entrenador;
 		this.esquiadores = esquiadores;
@@ -17,6 +18,13 @@ public class Equipo extends Participante {
 	}
 
 	//Getter y Setter
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
 	public String getCodigo() {
 		return codigo;
 	}
