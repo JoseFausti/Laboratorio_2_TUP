@@ -7,12 +7,12 @@ import org.apache.logging.log4j.LogManager;
 public class Main {
     final Level VERBOSE = Level.forName("VERBOSE", 150);
 
-    private static final Logger logger = LogManager.getLogger(Main.class);
+    private static final Logger logger = LogManager.getLogger(Main_.class);
 
     public static void main(final String... args)
     {
 
-        Main app = new Main();
+        Main_ app = new Main_();
 
         if(logger.isErrorEnabled())
         logger.error("esto es un error");
