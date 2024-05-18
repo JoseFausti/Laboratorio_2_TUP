@@ -21,11 +21,32 @@ public class DetalleFactura implements Serializable {
     @Column(name = "subtotal")
     private int subtotal;
 
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "fk_Articulo")
+    private Articulo articulo;
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "fk_factura")
+    private Factura factura;
+
     //Constructor
     public DetalleFactura(){}
     public DetalleFactura(int cantidad, int subtotal) {
         this.cantidad = cantidad;
         this.subtotal = subtotal;
+    }
+
+    public DetalleFactura(int cantidad, int subtotal, Articulo articulo) {
+        this.cantidad = cantidad;
+        this.subtotal = subtotal;
+        this.articulo = articulo;
+    }
+
+    public DetalleFactura(int cantidad, int subtotal, Articulo articulo, Factura factura) {
+        this.cantidad = cantidad;
+        this.subtotal = subtotal;
+        this.articulo = articulo;
+        this.factura = factura;
     }
 
     //Getter y Setter
@@ -51,5 +72,19 @@ public class DetalleFactura implements Serializable {
 
     public void setSubtotal(int subtotal) {
         this.subtotal = subtotal;
+    }
+
+    public Articulo getArticulo() {
+        return articulo;
+    }
+    public void setArticulo(Articulo articulo) {
+        this.articulo = articulo;
+    }
+
+    public Factura getFactura() {
+        return factura;
+    }
+    public void setFactura(Factura factura) {
+        this.factura = factura;
     }
 }

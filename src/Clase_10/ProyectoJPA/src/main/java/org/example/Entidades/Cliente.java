@@ -3,6 +3,8 @@ package org.example.Entidades;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity //Indica que esta clase se debe guardar en la base de datos
 @Table (name = "cliente") //Indica que esta va a ser una tabla en la base de datos
@@ -25,6 +27,9 @@ public class Cliente implements Serializable {
     @OneToOne(cascade = CascadeType.ALL) // hace que los cambios que ocurran en el padre tambien se vean reflejados en el hijo
     @JoinColumn(name = "fk_domicilio") // Creamos una columna que contenga la clave foranea
     private Domicilio domicilio;
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Factura> facturas = new ArrayList<Factura>();
 
     // Constructor
     public Cliente() {
@@ -75,5 +80,12 @@ public class Cliente implements Serializable {
     }
     public void setDomicilio(Domicilio domicilio) {
         this.domicilio = domicilio;
+    }
+
+    public List<Factura> getFacturas() {
+        return facturas;
+    }
+    public void setFacturas(List<Factura> facturas) {
+        this.facturas = facturas;
     }
 }

@@ -3,6 +3,8 @@ package org.example.Entidades;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "articulo")
@@ -21,6 +23,9 @@ public class Articulo implements Serializable {
     private int cantidad;
     @Column(name = "precio")
     private int precio;
+
+    @OneToMany(mappedBy = "articulo")
+    private List<DetalleFactura> detalleFacturas = new ArrayList<DetalleFactura>();
 
     //Constructor
     public Articulo(){}
@@ -61,5 +66,12 @@ public class Articulo implements Serializable {
 
     public void setPrecio(int precio) {
         this.precio = precio;
+    }
+
+    public List<DetalleFactura> getDetalleFacturas() {
+        return detalleFacturas;
+    }
+    public void setDetalleFacturas(List<DetalleFactura> detalleFacturas) {
+        this.detalleFacturas = detalleFacturas;
     }
 }
