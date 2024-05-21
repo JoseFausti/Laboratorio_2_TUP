@@ -24,8 +24,16 @@ public class Articulo implements Serializable {
     @Column(name = "precio")
     private int precio;
 
-    @OneToMany(mappedBy = "articulo")
+    @OneToMany(mappedBy = "articulo",cascade = CascadeType.PERSIST)
     private List<DetalleFactura> detalleFacturas = new ArrayList<DetalleFactura>();
+
+    @ManyToMany(cascade = {CascadeType.PERSIST,CascadeType.MERGE}) // En @ManyToMany debemos crear una tabla intermedia para relacionar ambos objetos:
+    @JoinTable(
+            name = "articulo_categoria",
+            joinColumns = @JoinColumn(name = "articulo_id"),
+            inverseJoinColumns = @JoinColumn(name = "categoria_id")
+    )
+    private List<Categoria>categorias = new ArrayList<Categoria>();
 
     //Constructor
     public Articulo(){}

@@ -3,6 +3,8 @@ package org.example.Entidades;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "categoria")
@@ -18,6 +20,9 @@ public class Categoria implements Serializable {
 
     @Column(name = "denominacion")
     private String denominacion;
+
+    @ManyToMany(mappedBy = "categorias")
+    private List<Articulo>articulos = new ArrayList<Articulo>();
 
     //Constructor
     public Categoria(){}

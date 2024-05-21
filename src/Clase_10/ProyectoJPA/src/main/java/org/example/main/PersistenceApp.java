@@ -23,7 +23,7 @@ public class PersistenceApp {
             domicilio.setCliente(cliente);
 
             entityManager.persist(cliente); // Volvemos a la instancia persistente
-             */
+            ----------------------------------------------------------------------
 
             Domicilio domicilio = entityManager.find(Domicilio.class,1L);
             Cliente cliente = entityManager.find(Cliente.class,1L);
@@ -31,9 +31,12 @@ public class PersistenceApp {
             System.out.println("Cliente del domicilio: " + domicilio.getCliente().getDni());
             System.out.println("Domicilio del cliente: " + cliente.getDomicilio().getNombreCalle());
 
+             */
             entityManager.flush(); // Sirve para limpiar nuestra conexion
 
             entityManager.getTransaction().commit(); // Lo guardamos en la base de datos definitivamente
+
+
 
         }catch (Exception e){
             entityManager.getTransaction().rollback(); // Evitamos que se produzca un error en la base de datos volviendo un paso atras la transaccion

@@ -28,7 +28,7 @@ public class Cliente implements Serializable {
     @JoinColumn(name = "fk_domicilio") // Creamos una columna que contenga la clave foranea
     private Domicilio domicilio;
 
-    @OneToMany(mappedBy = "cliente")
+    @OneToMany(mappedBy = "cliente",cascade = CascadeType.PERSIST)
     private List<Factura> facturas = new ArrayList<Factura>();
 
     // Constructor
