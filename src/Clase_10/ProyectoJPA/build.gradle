@@ -12,8 +12,8 @@ repositories {
 dependencies {
     implementation 'org.hibernate:hibernate-core:5.5.7.Final'
     // Otras dependencias
-    implementation 'com.h2database:h2:1.4.200'
-    runtimeOnly 'com.h2database:h2:1.4.200'
+    implementation 'com.h2database:h2:2.2.220'
+    runtimeOnly 'com.h2database:h2:2.2.220'
 }
 task Main(type: JavaExec) {
     // Define la clase principal para ejecutar
