@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Entidades;
 
 import javax.persistence.*;
 import java.io.Serializable;
