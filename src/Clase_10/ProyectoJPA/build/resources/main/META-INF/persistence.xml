@@ -3,15 +3,37 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
              version="2.2">
+    <!-- Unidad de persistencia con el nombre "example-unit" -->
     <persistence-unit name="example-unit" transaction-type="RESOURCE_LOCAL">
+
+        <!-- Clases de entidad gestionadas por esta unidad de persistencia -->
         <class>org.example.Persona</class>
+
         <properties>
+            <!-- Propiedades de configuración para la conexión JDBC -->
+
+            <!-- Especifica el controlador JDBC a utilizar -->
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+
+            <!-- URL de la base de datos H2 en modo embebido -->
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/test"/>
+
+            <!-- Usuario de la base de datos -->
             <property name="javax.persistence.jdbc.user" value="sa"/>
+
+            <!-- Contraseña del usuario de la base de datos -->
             <property name="javax.persistence.jdbc.password" value=""/>
+
+            <!-- Muestra las sentencias SQL generadas en la consola -->
             <property name="hibernate.show_sql" value="true"/>
+
+            <!-- Especifica la acción de gestión del esquema de la base de datos -->
+            <!-- "create" crea el esquema de la base de datos en cada inicio -->
+            <!-- Otros valores posibles: "update", "create-drop", "validate" -->
             <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+            <!-- Especifica el dialecto de Hibernate para H2 -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
         </properties>
     </persistence-unit>
 </persistence>

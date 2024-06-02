@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/Clase_6" />
       <excludeFolder url="file://$MODULE_DIR$/src/Clase_8" />
+      <excludeFolder url="file://$MODULE_DIR$/src/Clase_10/ProyectoJPA" />
+      <excludeFolder url="file://$MODULE_DIR$/src/Clase_11/DebuggingPractica" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
