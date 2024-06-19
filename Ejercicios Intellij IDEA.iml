@@ -10,6 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/Clase_11/DebuggingPractica" />
       <excludeFolder url="file://$MODULE_DIR$/src/Clase_12/Practico_JUnic" />
       <excludeFolder url="file://$MODULE_DIR$/src/Parcial_1" />
+      <excludeFolder url="file://$MODULE_DIR$/src/Clase_13/PracticaFinal_JUnitYMockito_DevHype" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
