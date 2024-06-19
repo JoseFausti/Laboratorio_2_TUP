@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="example-unit" transaction-type="RESOURCE_LOCAL">
+
+        <class>entities.Articulo</class>
+        <class>entities.ArticuloInsumo</class>
+        <class>entities.ArticuloManufacturado</class>
+        <class>entities.ArticuloManufacturadoDetalle</class>
+        <class>entities.Categoria</class>
+        <class>entities.Cliente</class>
+        <class>entities.DetallePedido</class>
+        <class>entities.Domicilio</class>
+        <class>entities.Empleado</class>
+        <class>entities.Empresa</class>
+        <class>entities.Factura</class>
+        <class>entities.ImagenArticulo</class>
+        <class>entities.ImagenCliente</class>
+        <class>entities.ImagenEmpleado</class>
+        <class>entities.ImagenPromocion</class>
+        <class>entities.Localidad</class>
+        <class>entities.Pais</class>
+        <class>entities.Pedido</class>
+        <class>entities.Promocion</class>
+        <class>entities.PromocionDetalle</class>
+        <class>entities.Provincia</class>
+        <class>entities.Sucursal</class>
+        <class>entities.UnidadMedida</class>
+        <class>entities.UsuarioCliente</class>
+        <class>entities.UsuarioEmpleado</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
+
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <property name="hibernate.generate_statistics" value="true"/>
+            <property name="hibernate.type" value="trace"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
